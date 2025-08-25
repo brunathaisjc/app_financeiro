@@ -1,4 +1,5 @@
 import 'package:app_financeiro/common/constants/app_colors.dart';
+import 'package:app_financeiro/common/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -14,7 +15,7 @@ class OnboardingPage extends StatelessWidget {
             flex: 2,
             child: Container(
               color: AppColors.brancoGelo,
-              child: Image.asset('/images/man.png'),
+              child: Image.asset('assets/images/man.png'),
             ),
           ),
           Expanded(
@@ -22,7 +23,16 @@ class OnboardingPage extends StatelessWidget {
               color: AppColors.white,
             ),
           ),
-          const Text('Texto'),
+          Text(
+            'Spend Smarter', 
+            style: AppTextStyles.medioTexto.copyWith(
+              color: AppColors.verdeDois),
+          ),
+          Text(
+            'Save More', 
+          style: AppTextStyles.medioTexto.copyWith(
+              color: AppColors.verdeDois),
+          ),
         ],
       ),
     );
