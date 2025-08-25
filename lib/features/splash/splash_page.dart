@@ -12,17 +12,14 @@ class SplashPage extends StatelessWidget {
       body: Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: AppColors.gradienteVerde,
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: AppColors.gradienteVerde,
+          ),
         ),
-        ),
-      child: Text(
-        'Finanças', 
-        style: AppTextStyles.grandeTexto.copyWith(color: AppColors.white),
-        ),
-      )
+        child: Image.asset('/images/man.png'),
+      ),
     );
   }
 }
