@@ -8,8 +8,9 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: Align(
+        child: Column(
+          children: [
           const SizedBox(height: 60.0), 
           Expanded(
             flex: 2,
@@ -33,7 +34,18 @@ class OnboardingPage extends StatelessWidget {
           style: AppTextStyles.medioTexto.copyWith(
               color: AppColors.verdeDois),
           ),
-        ],
+          ElevatedButton(
+            onPressed: (){}, 
+          child: Text('Get Started'),
+          ),
+          Text(
+            'Already have account? Log In', 
+          style: AppTextStyles.pequenoTexto.copyWith(
+              color: AppColors.cinza),
+          ),
+          const SizedBox(height: 40.0),
+          ],
+        ),
       ),
     );
   }

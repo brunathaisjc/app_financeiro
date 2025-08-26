@@ -14,4 +14,10 @@ class AppTextStyles {
     fontSize: 36.0, 
     fontWeight: FontWeight.w700, 
   );
+
+  static const TextStyle pequenoTexto = TextStyle(
+    fontFamily: 'Inter',
+    fontSize: 14.0, 
+    fontWeight: FontWeight.w500, 
+  );
 }

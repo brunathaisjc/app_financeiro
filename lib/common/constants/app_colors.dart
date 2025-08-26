@@ -13,5 +13,6 @@ class AppColors {
   
   static const Color white = Color.fromARGB(255, 240, 242, 241);
   static const Color brancoGelo = Color(0xFFEEF8F7);
+  static const Color cinza = Color(0xFF444444);
   
 }
